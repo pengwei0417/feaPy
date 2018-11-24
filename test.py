@@ -5,6 +5,8 @@ sys.path.append("../lib")
 sys.path.append("./lib")
 sys.path.append("../")
 import jaydebeapi
+from functools import reduce
+
 #import pandas as pd
 #import numpy as np
 #import pymysql
@@ -47,3 +49,6 @@ def connOracle(df,p=""):
   #conn=jaydebeapi.connect('oracle.jdbc.driver.OracleDriver',['jdbc:oracle:thin:@127.0.0.1/orcl','scott','tiger'],'D:\\MY_TOOLS\\ojdbc6.jar')
   conn=jaydebeapi.connect(dirver,[url,user,password],jarFile)
   return df
+
+
+print(sqlstr(None,"a,b,c,d"))
